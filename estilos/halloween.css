@@ -1,0 +1,69 @@
+@font-face {
+    font-family: halloween1;
+    src: url('../tipografias/halloween1.ttf');
+    font-family: halloween3;
+    src: url('../tipografias/plasdrip.ttf');
+    
+}
+body {background-color: black;}
+#container {
+            position:relative;
+            background-image:url('../imagenes/fondo2.png');
+            margin:auto;
+            width:1306px; 
+            height:638px;
+}
+#advertencia {position:absolute;
+              top:530px;
+              left:500px;
+              font-size:2em;
+              color:rgb(230, 236, 236);
+              font-family: halloween1;
+}
+#advertencian2 {position:absolute;
+       top:230px;
+       left:900px;
+       font-size:1em;
+       color:rgb(216, 91, 19);
+       font-family: halloween3;
+}
+#advertencian3 {position:absolute;
+       top:500px;
+       left:80px;
+       font-size:0.5em;
+       color:rgb(216, 91, 19);
+       font-family: halloween1;}
+#bats {position: absolute;
+       top:250px;
+       left:440px;
+       visibility: hidden;
+}
+#calabaza {position:absolute;
+           top:400px;
+           left:80px;
+           width:100px;
+           height:100px;
+           cursor:pointer;
+       }
+#calabazai {position:absolute;
+            top:400px;
+            left:80px;
+            width:100px;
+            height:100px;
+            cursor:pointer;
+       }
+#telaraña {position:absolute;
+       top:250px;
+       left:760px;
+       width:100px;
+       height:100px;
+       cursor:pointer;      
+}
+#araña {position:absolute;
+         top:250px;
+         left:760px;
+         width: 100px;
+         height:250px;
+         visibility:hidden;
+         cursor:crosshair;
+}

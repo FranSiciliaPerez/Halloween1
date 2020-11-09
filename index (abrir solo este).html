@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la invitacion de halloween</title>
+    <link rel="shorcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/halloween.css">
+    <!-- las funciones de js están fuera y las enlazo con el atributo src-->
+    <script src="javascripts/halloween.js">
+    </script>
+</head>
+<body onload="sonar('nana')">
+    <div id="container">
+        <audio src="sonidos/lullaby.mp3" id="nana" controls>
+        </audio>
+        <audio src="sonidos/murcielago.mp3" id="murcielago">
+        </audio>
+        <audio src="sonidos/araña.mp3" id="caida">
+        </audio><!-- sonido de murcielago, se activa cuando aparecen-->
+        <p id="advertencia">No hagas clik en la telarana del centro</p>
+        <p id="advertencian2">No toques la calabaza de abajo a la izquierda</p>
+        <p id="advertencian3">No toques la calabaza de abajo a la izquierda</p>
+        <img id="bats" src="imagenes/bats.gif" width="200">
+        <img id="calabazai" src="imagenes/calabaza.png" width="100">
+        <div id="calabaza" onmouseover="mostrar('bats'); sonar('murcielago')"onmouseout="ocultar('bats');parar('murcielago')"></div>
+        <div id="telaraña" onclick="mostrar('araña');sonar('caida')"></div>
+        <img id="araña" src="imagenes/araña.gif" width="180" onclick="ocultar('araña');parar('caida')">
+        <button onclick="invitacionhalloween.html=''">Invitacion de halloween</button>
+    </div>
+</body>
+</html>

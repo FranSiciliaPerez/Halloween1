@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Halloween</title>
+    <style>
+        @font-face {
+        font-family: halloween1;
+        src: url('../');
+        
+        body {background-color: rgb(243, 107, 16);}
+        #container {position:relative;
+            background-image: url('../imagenes/fondo4.jpg');
+            width:1506px; 
+            height:708px;
+        }
+        #titulo {
+         top:30px;
+         text-align: center;
+         font-family:halloween2;
+         font-size: 3em;
+         color:orange;
+         text-shadow:2px 2px 2px rgb(148, 89, 12);
+        }
+        #introduccion {position:absolute;
+              top:20px;
+              left:10px;
+              margin: 50px;
+              font: family halloween2;
+              font-size: 3em;
+              color:rgb(148, 38, 18);
+              text-shadow:1px 1px 1px rgb(61, 2, 2);
+              text-align: left;
+        }
+        #relax {position: absolute;
+                top: 7px;}
+    </style>
+</head>
+<body onload="sonar('relax')">
+    <div id="container">
+    <p id="titulo">Fiesta de Halloween</p>
+    <p id="introduccion">Estas invitado a mi fiesta de halloween a las 18:30 
+        en la C/Inframundo Nº666, no olvides llevar tu mejor disfraz de fantasma o esqueleto</p>
+    <audio src="sonidos/mufondo.mp3" id="relax" controls>
+    </audio>
+    </div>
+</body>
+</html>
